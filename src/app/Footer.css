@@ -1,0 +1,26 @@
+/* Footer */
+footer {
+    background-color: #f0f0f0;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .footer-links li {
+    margin-right: 10px;
+  }
+  
+  .footer-copyright {
+    color: #888;
+  }
