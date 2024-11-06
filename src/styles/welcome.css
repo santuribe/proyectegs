@@ -1,0 +1,20 @@
+/* src/styles/welcome.css */
+
+.home-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1; /* Coloca el texto encima del carrusel */
+  }
+  
+  .welcome-message {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para destacar el texto */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  

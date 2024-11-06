@@ -1,0 +1,36 @@
+/* src/styles/navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #212529; /* Gris oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .navbar-logo {
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-item {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .navbar-item:hover {
+    color: #1DB954; /* Verde tipo Spotify */
+  }
+  

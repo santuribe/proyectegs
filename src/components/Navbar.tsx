@@ -1,17 +1,18 @@
 // src/components/Navbar.tsx
+"use client";
+
 import React from 'react';
 import Link from 'next/link';
+import '../styles/navbar.css'; // Importar el archivo CSS
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 w-[90%] max-w-4xl bg-[#212529] text-white p-4 rounded-full shadow-lg flex items-center justify-between">
-      <div className="flex items-center">
-        <div className="text-spotify-green font-bold text-2xl">EGS</div>
-      </div>
-      <div className="flex space-x-8">
-        <Link href="/" className="hover:text-spotify-green">Home</Link>
-        <Link href="/about" className="hover:text-spotify-green">About</Link>
-        <Link href="/contact" className="hover:text-spotify-green">Contact</Link>
+    <nav className="navbar">
+      <div className="navbar-logo">EGS</div>
+      <div className="navbar-menu">
+        <Link href="/" className="navbar-item">Inicio</Link>
+        <Link href="/servicios" className="navbar-item">Servicios</Link>
+        <Link href="/contacto" className="navbar-item">Contacto</Link>
       </div>
     </nav>
   );

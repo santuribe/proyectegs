@@ -1,19 +1,21 @@
 // src/app/page.tsx
+"use client";
+
 import React from 'react';
+import Carousel from '../components/Carousel'; // Si necesitas subir un nivel de carpeta
 import Navbar from '../components/Navbar';
-import Carousel from '../components/Carousel';
+import '../styles/welcome.css'; // Importar el archivo CSS
 
 const Home: React.FC = () => {
   return (
-    <div className="relative min-h-screen bg-black text-white overflow-hidden">
-      <Carousel /> {/* Fondo del carrusel */}
+    <main className="home-container">
       <Navbar />
-      <main className="relative flex flex-col items-center justify-center h-screen z-10">
-        <h1 className="text-5xl font-bold text-spotify-green">Bienvenido a EGS</h1>
-        <p className="mt-4 text-xl text-gray-300">Soluciones Electrónicas a tu Alcance</p>
-      </main>
-      <div className="absolute inset-0 bg-black opacity-40"></div> {/* Filtro de oscurecimiento */}
-    </div>
+      <Carousel />
+      <div className="welcome-message">
+        <h1>Bienvenido a EGS</h1>
+        <p>Soluciones electrónicas para tus necesidades</p>
+      </div>
+    </main>
   );
 };
 
